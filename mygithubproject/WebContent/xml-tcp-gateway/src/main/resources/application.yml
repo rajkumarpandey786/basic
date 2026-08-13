@@ -1,0 +1,76 @@
+gateway:
+  tcp:
+    host: 0.0.0.0
+    port: 9000
+    keepAlive: true
+    tcpNoDelay: true
+    receiveBuffer: 1048576
+    sendBuffer: 1048576
+    maxFrameLength: 65535
+
+  protocol:
+    requireSignon: true
+    requireKeyExchange: true
+    requireEcho: true
+    enableSignoff: true
+    echoIntervalSeconds: 30
+
+  downstream:
+    transactionTimeoutMs: 800
+    maxInflightTransactions: 10000
+
+    active:
+      - T
+      - P
+
+    systems:
+      T:
+        url: http://localhost:8081
+        connectTimeoutMs: 500
+        responseTimeoutMs: 700
+        maxConnections: 500
+
+      P:
+        url: http://localhost:8082
+        connectTimeoutMs: 500
+        responseTimeoutMs: 700
+        maxConnections: 500
+
+logging:
+  level:
+    root: INFO
+    reactor.netty: INFO
+    com.rkp.gateway: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      T:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 20
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 5
+
+      P:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 20
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 5
+
+  bulkhead:
+    instances:
+      T:
+        maxConcurrentCalls: 500
+        maxWaitDuration: 0
+
+      P:
+        maxConcurrentCalls: 500
+        maxWaitDuration: 0
