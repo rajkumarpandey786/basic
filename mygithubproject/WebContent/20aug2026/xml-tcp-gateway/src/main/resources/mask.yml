@@ -1,0 +1,36 @@
+masking:
+  enabled: true
+
+  xml:
+    fields:
+      - path: root.rec.pan
+        type: PAN
+
+      - path: root.rec.track2
+        type: PAN
+
+      - path: root.rec.sessionKey
+        type: KEY
+
+      - path: root.rec.macKey
+        type: KEY
+
+      - path: root.rec.pinBlock
+        type: HIDE
+
+      - path: root.rec.cvv
+        type: HIDE
+
+      - path: root.rec.aadhaar
+        type: AADHAAR
+
+  json:
+    fields:
+      - path: payment.pan
+        type: PAN
+
+      - path: payment.sessionKey
+        type: KEY
+
+      - path: payment.pinBlock
+        type: HIDE

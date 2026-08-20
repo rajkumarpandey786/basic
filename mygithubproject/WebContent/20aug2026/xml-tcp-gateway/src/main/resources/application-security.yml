@@ -1,0 +1,61 @@
+gateway:
+
+  security:
+
+    upstream:
+
+      mtls:
+        enabled: false
+        protocol: TLSv1.3
+        handshakeTimeoutMs: 10000
+
+        keyStore:
+          type: PKCS12
+          path: ${GATEWAY_UPSTREAM_KEYSTORE_PATH:}
+          password: ${GATEWAY_UPSTREAM_KEYSTORE_PASSWORD:}
+          keyAlias: gateway-server
+
+        trustStore:
+          type: PKCS12
+          path: ${GATEWAY_UPSTREAM_TRUSTSTORE_PATH:}
+          password: ${GATEWAY_UPSTREAM_TRUSTSTORE_PASSWORD:}
+
+    downstream:
+
+      systems:
+
+        T:
+
+          mtls:
+            enabled: false
+            protocol: TLSv1.3
+            handshakeTimeoutMs: 10000
+
+            keyStore:
+              type: PKCS12
+              path: ${GATEWAY_T_KEYSTORE_PATH:}
+              password: ${GATEWAY_T_KEYSTORE_PASSWORD:}
+              keyAlias: gateway-t
+
+            trustStore:
+              type: PKCS12
+              path: ${GATEWAY_T_TRUSTSTORE_PATH:}
+              password: ${GATEWAY_T_TRUSTSTORE_PASSWORD:}
+
+        P:
+
+          mtls:
+            enabled: false
+            protocol: TLSv1.3
+            handshakeTimeoutMs: 10000
+
+            keyStore:
+              type: PKCS12
+              path: ${GATEWAY_P_KEYSTORE_PATH:}
+              password: ${GATEWAY_P_KEYSTORE_PASSWORD:}
+              keyAlias: gateway-p
+
+            trustStore:
+              type: PKCS12
+              path: ${GATEWAY_P_TRUSTSTORE_PATH:}
+              password: ${GATEWAY_P_TRUSTSTORE_PASSWORD:}
