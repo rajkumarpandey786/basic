@@ -1,0 +1,110 @@
+spring:
+  config:
+    import: 
+      - classpath:application-security.yml
+      - classpath:execution-rules.yml
+
+
+gateway:
+  tcp:
+    host: 0.0.0.0
+    port: 9000
+    keepAlive: true
+    tcpNoDelay: true
+    receiveBuffer: 1048576
+    sendBuffer: 1048576
+    maxFrameLength: 65535
+
+  protocol:
+    requireSignon: true
+    requireKeyExchange: true
+    requireEcho: true
+    enableSignoff: true
+    echoIntervalSeconds: 30
+
+  downstream:
+    transactionTimeoutMs: 2000 # Must be more than T and P responseTimeoutMs - This is a global Response Timeout
+    maxInflightTransactions: 10000
+
+    active:
+      - T
+      - P
+
+    systems:
+      T:
+        url: https://localhost:8081
+        connectTimeoutMs: 500
+        responseTimeoutMs: 1600
+        maxConnections: 500
+        pendingAcquireMaxCount: 5000
+        pendingAcquireTimeoutMs: 5000
+        maxIdleTimeMs: 60000
+        maxLifeTimeMs: 600000
+        keepAlive: false
+
+      P:
+        url: https://localhost:8082
+        connectTimeoutMs: 500
+        responseTimeoutMs: 700
+        maxConnections: 500
+        pendingAcquireMaxCount: 5000
+        pendingAcquireTimeoutMs: 5000
+        maxIdleTimeMs: 60000
+        maxLifeTimeMs: 600000
+        keepAlive: false
+
+
+logging:
+  level:
+    root: INFO
+    reactor.netty: INFO
+    io.netty.handler.ssl: DEBUG
+    com.rkp.gateway: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+observability:
+  logging:
+    asyncEnabled: true
+    queueSize: 65536
+    discardingThreshold: 0
+    includeCallerData: false
+    level: INFO
+    directory: logs
+    fileName: gateway.log
+    auditFileName: audit.log
+    performanceFileName: performance.log
+    maxHistoryDays: 30
+    maxFileSize: 100MB
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      T:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 20
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 5
+
+      P:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 20
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 5
+
+  bulkhead:
+    instances:
+      T:
+        maxConcurrentCalls: 500
+        maxWaitDuration: 0
+
+      P:
+        maxConcurrentCalls: 500
+        maxWaitDuration: 0
+

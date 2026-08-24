@@ -1,0 +1,121 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.rkp:reactive-tcp-gateway >--------------------
+[INFO] Building Reactive TCP Gateway 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.8.1:tree (default-cli) @ reactive-tcp-gateway ---
+[INFO] com.rkp:reactive-tcp-gateway:jar:1.0.0
+[INFO] +- org.springframework.boot:spring-boot-starter:jar:3.5.6:compile
+[INFO] |  +- org.springframework.boot:spring-boot:jar:3.5.6:compile
+[INFO] |  |  \- org.springframework:spring-context:jar:6.2.11:compile
+[INFO] |  |     +- org.springframework:spring-aop:jar:6.2.11:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:6.2.11:compile
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:3.5.6:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-logging:jar:3.5.6:compile
+[INFO] |  |  +- ch.qos.logback:logback-classic:jar:1.5.18:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-core:jar:1.5.18:compile
+[INFO] |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.24.3:compile
+[INFO] |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.24.3:compile
+[INFO] |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.17:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile
+[INFO] |  +- org.springframework:spring-core:jar:6.2.11:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:6.2.11:compile
+[INFO] |  \- org.yaml:snakeyaml:jar:2.4:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-webflux:jar:3.5.6:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:3.5.6:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.19.2:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.19.2:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.19.2:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-reactor-netty:jar:3.5.6:compile
+[INFO] |  |  \- io.projectreactor.netty:reactor-netty-http:jar:1.2.10:compile
+[INFO] |  |     +- io.netty:netty-codec-http:jar:4.1.127.Final:compile
+[INFO] |  |     |  +- io.netty:netty-common:jar:4.1.127.Final:compile
+[INFO] |  |     |  +- io.netty:netty-buffer:jar:4.1.127.Final:compile
+[INFO] |  |     |  +- io.netty:netty-transport:jar:4.1.127.Final:compile
+[INFO] |  |     |  +- io.netty:netty-codec:jar:4.1.127.Final:compile
+[INFO] |  |     |  \- io.netty:netty-handler:jar:4.1.127.Final:compile
+[INFO] |  |     +- io.netty:netty-codec-http2:jar:4.1.127.Final:compile
+[INFO] |  |     +- io.netty:netty-resolver-dns:jar:4.1.127.Final:compile
+[INFO] |  |     |  +- io.netty:netty-resolver:jar:4.1.127.Final:compile
+[INFO] |  |     |  \- io.netty:netty-codec-dns:jar:4.1.127.Final:compile
+[INFO] |  |     +- io.netty:netty-resolver-dns-native-macos:jar:osx-x86_64:4.1.127.Final:compile
+[INFO] |  |     |  \- io.netty:netty-resolver-dns-classes-macos:jar:4.1.127.Final:compile
+[INFO] |  |     +- io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.127.Final:compile
+[INFO] |  |     |  +- io.netty:netty-transport-native-unix-common:jar:4.1.127.Final:compile
+[INFO] |  |     |  \- io.netty:netty-transport-classes-epoll:jar:4.1.127.Final:compile
+[INFO] |  |     \- io.projectreactor.netty:reactor-netty-core:jar:1.2.10:compile
+[INFO] |  |        \- io.netty:netty-handler-proxy:jar:4.1.127.Final:compile
+[INFO] |  |           \- io.netty:netty-codec-socks:jar:4.1.127.Final:compile
+[INFO] |  +- org.springframework:spring-web:jar:6.2.11:compile
+[INFO] |  |  +- org.springframework:spring-beans:jar:6.2.11:compile
+[INFO] |  |  \- io.micrometer:micrometer-observation:jar:1.15.4:compile
+[INFO] |  |     \- io.micrometer:micrometer-commons:jar:1.15.4:compile
+[INFO] |  \- org.springframework:spring-webflux:jar:6.2.11:compile
+[INFO] +- com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.19.2:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.19.2:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.19.2:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.19.2:compile
+[INFO] |  \- org.codehaus.woodstox:stax2-api:jar:4.2.2:compile
+[INFO] +- com.fasterxml.woodstox:woodstox-core:jar:7.1.0:compile
+[INFO] +- io.github.resilience4j:resilience4j-spring-boot3:jar:2.3.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-spring6:jar:2.3.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-annotations:jar:2.3.0:compile
+[INFO] |  |  +- io.github.resilience4j:resilience4j-consumer:jar:2.3.0:compile
+[INFO] |  |  |  \- io.github.resilience4j:resilience4j-circularbuffer:jar:2.3.0:runtime
+[INFO] |  |  \- io.github.resilience4j:resilience4j-framework-common:jar:2.3.0:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:2.0.17:compile
+[INFO] |  \- io.github.resilience4j:resilience4j-micrometer:jar:2.3.0:compile
+[INFO] |     \- io.micrometer:micrometer-core:jar:1.15.4:compile
+[INFO] |        +- org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[INFO] |        \- org.latencyutils:LatencyUtils:jar:2.0.3:runtime
+[INFO] +- io.github.resilience4j:resilience4j-reactor:jar:2.3.0:compile
+[INFO] |  +- io.projectreactor:reactor-core:jar:3.7.11:compile
+[INFO] |  |  \- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-circuitbreaker:jar:2.3.0:compile
+[INFO] |  |  \- io.github.resilience4j:resilience4j-core:jar:2.3.0:compile
+[INFO] |  |     \- org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.9.25:compile
+[INFO] |  |        +- org.jetbrains.kotlin:kotlin-stdlib:jar:1.9.25:compile
+[INFO] |  |        |  \- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |  |        \- org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:1.9.25:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-ratelimiter:jar:2.3.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-timelimiter:jar:2.3.0:compile
+[INFO] |  +- io.github.resilience4j:resilience4j-bulkhead:jar:2.3.0:compile
+[INFO] |  \- io.github.resilience4j:resilience4j-retry:jar:2.3.0:compile
+[INFO] +- io.micrometer:context-propagation:jar:1.1.3:compile
+[INFO] \- org.springframework.boot:spring-boot-starter-test:jar:3.5.6:test
+[INFO]    +- org.springframework.boot:spring-boot-test:jar:3.5.6:test
+[INFO]    +- org.springframework.boot:spring-boot-test-autoconfigure:jar:3.5.6:test
+[INFO]    +- com.jayway.jsonpath:json-path:jar:2.9.0:test
+[INFO]    +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:test
+[INFO]    |  \- jakarta.activation:jakarta.activation-api:jar:2.1.4:test
+[INFO]    +- net.minidev:json-smart:jar:2.5.2:test
+[INFO]    |  \- net.minidev:accessors-smart:jar:2.5.2:test
+[INFO]    |     \- org.ow2.asm:asm:jar:9.7.1:test
+[INFO]    +- org.assertj:assertj-core:jar:3.27.4:test
+[INFO]    |  \- net.bytebuddy:byte-buddy:jar:1.17.7:test
+[INFO]    +- org.awaitility:awaitility:jar:4.2.2:test
+[INFO]    +- org.hamcrest:hamcrest:jar:3.0:test
+[INFO]    +- org.junit.jupiter:junit-jupiter:jar:5.12.2:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-api:jar:5.12.2:test
+[INFO]    |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO]    |  |  +- org.junit.platform:junit-platform-commons:jar:1.12.2:test
+[INFO]    |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO]    |  +- org.junit.jupiter:junit-jupiter-params:jar:5.12.2:test
+[INFO]    |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.12.2:test
+[INFO]    |     \- org.junit.platform:junit-platform-engine:jar:1.12.2:test
+[INFO]    +- org.mockito:mockito-core:jar:5.17.0:test
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.17.7:test
+[INFO]    |  \- org.objenesis:objenesis:jar:3.3:test
+[INFO]    +- org.mockito:mockito-junit-jupiter:jar:5.17.0:test
+[INFO]    +- org.skyscreamer:jsonassert:jar:1.5.3:test
+[INFO]    |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO]    +- org.springframework:spring-test:jar:6.2.11:test
+[INFO]    \- org.xmlunit:xmlunit-core:jar:2.10.4:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.641 s
+[INFO] Finished at: 2026-08-22T12:04:03+05:30
+[INFO] ------------------------------------------------------------------------
