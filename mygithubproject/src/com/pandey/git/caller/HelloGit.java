@@ -312,5 +312,37 @@ root.rec.externalTransactionId			 =   NO_EXISTS
 root.rec.status							 =   NO_EXISTS 
 root.rec.type							 =   details[c].transactionType
 NO_EXISTS								 =   bin
-										 
+--------------
+root.rec.Chnl 						=  NO_EXISTS 
+root.rec.Country 					=  NO_EXISTS 
+root.rec.FunctionName 				=  NO_EXISTS
+root.rec.ReqID 						=  systemID
+root.rec.Ostatus				    =  responseCode
+root.rec.RespMsg                    =  messageStatus
+root.rec.externalTransactionId      =  transactionReferenceNumber
+root.rec.ErrorCode					=  NO_EXISTS
+root.rec.ErrorDesc 					=  NO_EXISTS
+NO_EXISTS 					        =  responseDescription
+NO_EXISTS                           =  callbackUrl
+NO_EXISTS                           =  screeningRequestDate
+NO_EXISTS							=  messageChecksum
+NO_EXISTS							=  statusOwner
+NO_EXISTS                           =  statusComment
+NO_EXISTS                           =  statusLabel
+
+
+----------------
+{
+    "callbackUrl": " https://gateway-stg.51242.app.standardchartered.com/functions/api/v1/txnscreeningstatus/60dad0eb59664095b7c52126%22",
+    "messageChecksum": "",
+    "messageStatus": "001",
+    "responseCode": "200",
+    "responseDescription": "Ack Sent Successfully",
+    "screeningRequestDate": "04-Mar-26 05:39:34 AM",
+    "statusComment": "Stop: 1, Nonblocking: 0",
+    "statusLabel": "HIT",
+    "statusOwner": null,
+    "systemID": "SBCI20260304053934-00000-1151356",
+    "transactionReferenceNumber": "TS_REF_39"
+}
 */
