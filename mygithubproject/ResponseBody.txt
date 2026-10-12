@@ -1,0 +1,38 @@
+    Message #                         0210                       
+ Primary Bitmap			FE3E648108E0E000
+ Secondary Bitmap		0000000000000100
+(2) PAN Length & PAN                  16 524355FFFFFF5806        
+(3) Processing Code                   26 00 00                   
+(4) Transaction Amount                       30000               
+(5) Settlement Amount                        41460               
+(6) Cardholder Billign Amount                30000               
+(7) Transmissition Date&Time           614 124309           
+(8) Cardholdldr Billing Fee                                 
+(9) Settlement Conversion Rate                              
+(10) Conversion Rate Crdhldr Bill                           
+(11) System Trace Audit Number        412724                
+(12) Local Transaction Time           101307                
+(13) Local Transaction Date            614                  
+(18) Merchant Category Code           6533                  
+(22) PAN Entry Mode/PIN Entry Cap     81 2                  
+(25) POS Condition Code               00                              
+(32) Acquirer ID                       6 015929                       
+(37) Serial/Retreival Reference       716510961505 
+(39) Response Code                    00
+(41) Card Acceptor Terminal ID        A1567896                                         
+(43) Crd Accpt Term. Name/Addr        PAYOMA.COM             London        GBR 
+(49) Transaction Currency Code        840    
+(50) Settlement Currency Code         702    
+(51) Cardholder Currecny Code         840    
+(52) PIN Block                               
+(120)    008 00100226
+
+DE-120 TLV Data breakup as below
+
+TAG	LENGTH	VALUE	
+
+001	002	26
+
+Actual Data
+
+0210FE3844810AA0E000000000000000010016524355FFFFFF5806260000000000030000000000041460000000030000061412430941272410130706146533812000601592971651096150500A1567896PAYOMA.COM             London        GBR84070284000800100226

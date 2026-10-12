@@ -1,0 +1,84 @@
+100 request received from Visa
+
+    Message #                         0100                
+(2) PAN Length & PAN                  16 403397FFFFFF1473 
+(3) Processing Code                   10 00 00            
+(4) Transaction Amount                      139088        
+(5) Settlement Amount                                     
+(6) Cardholder Billign Amount               139088        
+(7) Transmissition Date&Time           902  61803   
+(8) Cardholdldr Billing Fee                         
+(9) Settlement Conversion Rate                      
+(10) Conversion Rate Crdhldr Bill     61000000      
+(11) System Trace Audit Number        694292        
+(12) Local Transaction Time                         
+(13) Local Transaction Date                         
+(14) Expiration Date                  9994          
+(15) Settlement Date                                
+(16) Conversion Date                                
+(17) Capture date                                   
+(18) Merchant Category Code           4829          
+(19) Acquirer Country Code            826           
+(20) PAN Country Code                               
+(21) Forwarding Inst Country Code                   
+(22) PAN Entry Mode/PIN Entry Cap     01 0          
+(23) Card Member Number                             
+(24) Network ID                                                     
+(25) POS Condition Code               59                            
+(26) POS PIN Capture Code                                           
+(27) Auth ID Response Length                                        
+(28) Transactions Fee                            (29) Stl Currency  
+(30) Transaction Processing Fee                  (31) Stl Currency  
+(32) Acquirer ID                       6 435001                     
+(33) Forwarding Inst ID                                             
+(34) PAN Extended                                                   
+(35) Track II                                                       
+(36) Track III                                                      
+                                                                    
+(37) Serial/Retreival Reference       424606694292                  
+(38) Approval#/Auth ID Rcp                                          
+(39) Response Code                                                  
+(40) Service Restriction Code                                       
+(41) Card Acceptor Terminal ID        10102001                                
+(42) Crd Accpt/Merchant ID            1LW000010100002                         
+(43) Crd Accpt Term. Name/Addr        PAYSEND                  Credit from tGB
+(44)     15               2                                                   
+                                                                              
+                                                                              
+                                                                              
+(45)Tk I                                                                      
+                                                                              
+(46)                                                                          
+                                                                              
+(49) Transaction Currency Code        784      
+(50) Settlement Currency Code                  
+(51) Cardholder Currecny Code         784      
+(52) PIN Block                                 
+(53) Security Relation Information             
+(54) Addtional Amounts                         
+                            Acct 1             
+                                 2             
+                                 3             
+                                 4             
+                                 5             
+                                 6             
+(59)     11 W1F 9HY GBR   
+                          
+                          
+                          
+(60)     10 0900004005    
+ (62)      26 0100000000000000000011000000000000000000000000000000000000000000 5
+84246226836713                                                                  
+                          1800000000                                            
+(63)       5 1000000000000000000000000002    
+(63.6)    
+(63.10)      
+(96) Message Sec code                            
+(97) Net Settlement Amount                       
+(98) Payee                                       
+(99) Settlement Inst ID                          
+(100) Receiving Inst ID                          
+(101) File Name                                  
+(102) FROM Account                               
+(103) TO Account                                 
+(104) Transaction Descriptions        111        
