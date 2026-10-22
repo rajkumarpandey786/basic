@@ -10,339 +10,478 @@ public static void main(String[] args) {
 }
 }
 /**
---mapping_updated_fields_withc400-tsaas.txt
-root.rec.AcceptorLegalBusinessName= details.acceptorLegalBusinessName
-root.rec.AcqCountryCode= details.acquiringCountryCode
-root.rec.AcqInstID= details.institutionCode
-root.rec.AdditionalMsg= details.additionalMessage
-root.rec.BillingAmt= details.holderBillingAmount
-root.rec.BillingCurrCode= details.cardHolderCurrency
-root.rec.CardNbr= details.pan
-root.rec.CardSeqNbr= NO_EXISTS
-root.rec.Chnl= NO_EXISTS
-root.rec.Country= details.country
-root.rec.FundingSource= details.fundingSource
-root.rec.FunctionName= NO_EXISTS
-root.rec.LanguageData= NO_EXISTS
-root.rec.LanguageID= NO_EXISTS
-root.rec.LocalTrxnDate= details.transactionDate
-root.rec.LocalTrxnTime= NO_EXISTS
-root.rec.MCC= NO_EXISTS
-root.rec.MTI= details.msgType
-root.rec.MerchantID= NO_EXISTS
-root.rec.MerchantName= details.cardAcceptName
-root.rec.OBSResult1= details.obService2
-root.rec.OBService= details.obService1
-root.rec.POSEntryMode= NO_EXISTS
-root.rec.POSConditionCode= NO_EXISTS
-root.rec.ParticipationID= NO_EXISTS
-root.rec.PaymentFacilitatorName= details.paymentFacilitatorName
-root.rec.ProcessingCode= details.processingCode
-root.rec.RecipientAcctNbr= details.recipientAcctNumber
-root.rec.RecipientAddr= details.recipientAddress
-root.rec.RecipientCity= details.recipientCity
-root.rec.RecipientCountry= details.recipientCountry
-root.rec.RecipientCountryOfBirth= details.recipientCob
-root.rec.RecipientDOB= details.recipientDob
-root.rec.RecipientID= details.recipientIdtNo
-root.rec.RecipientIDCountryCode= details.recipientIdtCc
-root.rec.RecipientIDExpDate= details.recipientExpiry
-root.rec.RecipientIDType= details.recipientIdType
-root.rec.RecipientName= details.recipientName
-root.rec.RecipientNationality= details.recipientNationality
-root.rec.RecipientPhoneNbr= NO_EXISTS
-root.rec.RecipientPostalCode= details.recipientPostalCode
-root.rec.RecipientState= details.provinceCode
-root.rec.ReqID= NO_EXISTS
-root.rec.RetrievalRefNbr= details.referenceNumber
-root.rec.SchemeTrxnID= NO_EXISTS
-root.rec.ScreeningScore= NO_EXISTS
-root.rec.SenderAcctNbr= details.senderAccount
-root.rec.SenderAddr= details.senderAddress
-root.rec.SenderCity= details.senderCity
-root.rec.SenderCountry= details.senderCountry
-root.rec.SenderCountryOfBirth= details.sendCob
-root.rec.SenderDOB= details.senderDob
-root.rec.SenderID= details.senderIdNumber
-root.rec.SenderIDCountryCode= details.senderIdCountryCode
-root.rec.SenderIDExpDate= NO_EXISTS
-root.rec.SenderIDType= NO_EXISTS
-root.rec.SenderName= details.senderName
-root.rec.SenderNationality= details.senderNationality
-root.rec.SenderPhoneNbr= NO_EXISTS
-root.rec.SenderPostalCode= details.senderPostalCode
-root.rec.SenderState= details.senderState
-root.rec.SysTrace= NO_EXISTS
-root.rec.TerminalID= details.institutionId
-root.rec.TransmissionDateTime= NO_EXISTS
-root.rec.TrxnAmt= details.txnAmount
-root.rec.TrxnCatCode= details.paymentType
-root.rec.TrxnCurrCode= details.currency
-root.rec.TrxnPurpose= details.transactionPurpose
-root.rec.TrxnType= type
-root.rec.UniqueTrxnRef= details.senderRef
-root.rec.WLMResultsCode= NO_EXISTS
-root.rec.externalTransactionId= uuMid
-root.rec.status= NO_EXISTS
-root.rec.type= txntype
----- tsaas_updated_Request.txt
-{
-    "uuMid": "1d4b2a31-8ad6-4073-a2e7-70d334a50111",
-    "unit": "CPH",
-    "business": "C400",
-    "application": "CPH",
-    "type": "OCT",
-    "service": "NA",
-    "userRef": "NA",
-    "direction": "I",
-    "reference": "312216287796",
-    "details": {
-        "msgType": "0200",
-        "sid": null,
-        "cid": "C400",
-        "country": "SG",
-        "paymentServiceField": null,
-        "pan": "1787301538525",
-        "processingCode": "260000",
-        "txnAmount": "000006.00",
-        "holderBillingAmount": "00006.00",
-        "conversionRateHolder": null,
-        "acquiringCountryCode": "GH",
-        "institutionCode": "1234",
-        "referenceNumber": "312216287796",
-        "cardAcceptName": "MERCHANTNAME",
-        "currency": "936",
-        "cardHolderCurrency": "936",
-        "senderRef": "UNIQREF123",
-        "senderAccount": "312216287796",
-        "senderName": "ROB",
-        "recipientName": "Joseph",
-        "senderCity": "UK",
-        "senderState": "UK",
-        "senderCountry": "GH",
-        "sourceOfFund": null,
-        "transactionDate": "061225",
-        "addlData": null,
-        "paymentType": null,
-        "obService1": "211",
-        "obService2": "00",
-        "firstName": "Joseph",
-        "middleName": null,
-        "lastName": null,
-        "streetAddress": "ADD",
-        "recipientCity": "UK",
-        "provinceCode": "UK",
-        "recipientCountry": "GH",
-        "recipientPostalCode": "TEST",
-        "recipientDob": "23124",
-        "recipientAcctNumber": "Test",
-        "senderFirstName": "ROB",
-        "senderMiddleName": null,
-        "senderLastName": null,
-        "senderPostalCode": "0121",
-        "senderAddress": "ROB ADD",
-        "additionalMessage": "TESTTING",
-        "fundingSource": "02",
-        "institutionId": "TERM1234",
-        "senderIdNumber": "212",
-        "senderNationality": "UK",
-        "sendCob": "35222",
-        "senderDob": "099112",
-        "senderIdCountryCode": "221",
-        "recipientAddress": "ADD",
-        "recipientIdType": "TWA",
-        "recipientIdtNo": "992",
-        "recipientIdtCc": "2232",
-        "recipientExpiry": "asd",
-        "recipientNationality": "II",
-        "recipientCob": "213132",
-        "transactionPurpose": "TEST",
-        "bin": null,
-        "acceptorLegalBusinessName": null,
-        "paymentFacilitatorName": null,
-        "trxnType": null,
-        "sbitmap": null,
-        "pbitmap": null
-    },
-    "recipientName": "Joseph",
-    "senderName": "ROB",
-    "msgType": "0200",
-    "sendCob": "35222",
-    "pan": "1787301538525",
-    "country": "SG",
-    "referenceNumber": "312216287796",
-    "streetAddress": "ADD",
-    "recipientCity": "UK",
-    "provinceCode": "UK",
-    "senderAddress": "ROB ADD",
-    "senderCountry": "GH",
-    "senderCity": "UK",
-    "senderAccount": "312216287796",
-    "recipientDob": "23124",
-    "senderFirstName": "ROB",
-    "senderState": "UK",
-    "senderDob": "099112",
-    "txnAmount": "000006.00",
-    "firstName": "Joseph",
-    "cardAcceptName": "MERCHANTNAME",
-    "processingCode": "260000",
-    "transactionDate": "061225",
-    "acquiringCountryCode": "GH",
-    "recipientCountry": "GH",
-    "senderPostalCode": "0121",
-    "recipientAddress": "ADD",
-    "senderNationality": "UK",
-    "senderIdCountryCode": "221",
-    "recipientPostalCode": "TEST",
-    "cardHolderCurrency": "936",
-    "holderBillingAmount": "00006.00",
-    "institutionCode": "1234",
-    "recipientIdTNo": "992",
-    "recipientIdTCc": "2232",
-    "recipientExpiry": "asd",
-    "senderIdNumber": "212",
-    "recipientCob": "213132",
-    "obService1": "211",
-    "fundingSource": "02",
-    "institutionId": "TERM1234",
-    "senderRef": "UNIQREF123",
-    "obService2": "00",
-    "recipientIdType": "TWA",
-    "cid": "C400",
-    "recipientAcctNumber": "Test",
-    "recipientNationality": "II",
-    "additionalMessage": "TESTTING",
-    "transactionPurpose": "TEST",
-    "currency": "936",
-    "txntype": "CB",
-    "valuedate": "061225",
-    "SENDER": "CPH",
-    "RECEIVER": "TSAAS"
-}'
-------resp_mapping.txt
-root.rec.Chnl 						=  NO_EXISTS 
-root.rec.Country 					=  NO_EXISTS 
-root.rec.FunctionName 				=  NO_EXISTS
-root.rec.ReqID 						=  systemID
-root.rec.Ostatus				    =  responseCode
-root.rec.RespMsg                    =  messageStatus
-root.rec.externalTransactionId      =  transactionReferenceNumber
-root.rec.ErrorCode					=  NO_EXISTS
-root.rec.ErrorDesc 					=  NO_EXISTS
-NO_EXISTS 					        =  responseDescription
-NO_EXISTS                           =  callbackUrl
-NO_EXISTS                           =  screeningRequestDate
-NO_EXISTS							=  messageChecksum
-NO_EXISTS							=  statusOwner
-NO_EXISTS                           =  statusComment
-NO_EXISTS                           =  statusLabel
-----req_mapping.txt
-root.rec.AcceptorLegalBusinessName 		 =   acceptorLegalBusinessName  
-root.rec.AcqCountryCode					 =   acquiringcountrycode 
-root.rec.AcqInstID						 =   NO_EXISTS
-root.rec.AdditionalMsg					 =   transaction.details[o].additionalmessage
-root.rec.BillingAmt						 =   NO_EXISTS 
-root.rec.BillingCurrCode				 =   NO_EXISTS
-root.rec.CardNbr						 =   NO_EXISTS
-root.rec.CardSeqNbr						 =   NO_EXISTS 
-root.rec.Chnl							 =   NO_EXISTS 
-root.rec.Country						 =   country 
-root.rec.FundingSource					 =   NO_EXISTS
-root.rec.FunctionName					 =   NO_EXISTS   
-root.rec.LanguageData					 =   NO_EXISTS 
-root.rec.LanguageID						 =   NO_EXISTS 
-root.rec.LocalTrxnDate					 =   NO_EXISTS  
-root.rec.LocalTrxnTime					 =   NO_EXISTS
-root.rec.MCC							 =   NO_EXISTS 
-root.rec.MTI							 =   NO_EXISTS 
-root.rec.MerchantID						 =   NO_EXISTS  
-root.rec.MerchantName					 =   transaction.details[B].cardacceptname
-root.rec.OBSResult1 					 =   NO_EXISTS 
-root.rec.OBService						 =   NO_EXISTS 
-root.rec.POSEntryMode					 =   NO_EXISTS   
-root.rec.POSConditionCode				 =   NO_EXISTS  
-root.rec.ParticipationID				 =   NO_EXISTS 
-root.rec.PaymentFacilitatorName			 =   paymentFacilitatorName
-root.rec.ProcessingCode					 =   NO_EXISTS  
-root.rec.RecipientAcctNbr				 =   transaction.details[P].recipientacctnumber
-root.rec.RecipientAddr					 =	 transaction.details[P].receipientaddress
-root.rec.RecipientCity					 =	 transaction.details[P].recipientcity
-root.rec.RecipientCountry				 =	 transaction.details[B].recipientcountry
-root.rec.RecipientCountryOfBirth		 =   recipientcob
-root.rec.RecipientDOB					 =   NO_EXISTS 
-root.rec.RecipientID					 =   recipientidtno
-root.rec.RecipientIDCountryCode			 =   recipientidtcc
-root.rec.RecipientIDExpDate				 =   recipientexpiry
-root.rec.RecipientIDType				 =   NO_EXISTS 
-root.rec.RecipientName					 =	 transaction.details[P].recipientname
-root.rec.RecipientNationality			 =   recipientnationality
-root.rec.RecipientPhoneNbr				 =   NO_EXISTS 
-root.rec.RecipientPostalCode			 =	 recipientpostalcode
-root.rec.RecipientState 				 = 	 provincecode
-root.rec.ReqID							 =   NO_EXISTS 
-root.rec.RetrievalRefNbr				 =	 referenceNumber  
-root.rec.SchemeTrxnID					 =   NO_EXISTS  
-root.rec.ScreeningScore					 =   NO_EXISTS 
-root.rec.SenderAcctNbr					 =   transaction.details[c].senderaccount 
-root.rec.SenderAddr						 =   transaction.details[p].senderaddress
-root.rec.SenderCity						 =   sendercity
-root.rec.SenderCountry					 =   transaction.details[c].sendercountry
-root.rec.SenderCountryOfBirth			 =   sendcob
-root.rec.SenderDOB						 =   NO_EXISTS 
-root.rec.SenderID						 =   transaction.details[c].senderidnumber
-root.rec.SenderIDCountryCode			 =   senderidcountrycode
-root.rec.SenderIDExpDate				 =   NO_EXISTS 
-root.rec.SenderIDType					 =   NO_EXISTS 
-root.rec.SenderName						 =   transaction.details[c].sendername
-root.rec.SenderNationality				 =   sendernationality
-root.rec.SenderPhoneNbr					 =   NO_EXISTS 
-root.rec.SenderPostalCode				 =   senderpostalcode
-root.rec.SenderState					 =   senderstate
-root.rec.SysTrace						 =   NO_EXISTS  
-root.rec.TerminalID						 =   NO_EXISTS  
-root.rec.TransmissionDateTime			 =   NO_EXISTS  
-root.rec.TrxnAmt						 =   transaction.amount
-root.rec.TrxnCatCode					 =   NO_EXISTS 
-root.rec.TrxnCurrCode					 =   transaction.currency
-root.rec.TrxnPurpose					 =   transactionpurpose
-root.rec.TrxnType						 =   transaction.product
-root.rec.UniqueTrxnRef					 =   NO_EXISTS 
-root.rec.WLMResultsCode					 =   NO_EXISTS 
-root.rec.externalTransactionId			 =   NO_EXISTS 
-root.rec.status							 =   NO_EXISTS 
-root.rec.type							 =   details[c].transactionType
-NO_EXISTS								 =   bin
---------------
-root.rec.Chnl 						=  NO_EXISTS 
-root.rec.Country 					=  NO_EXISTS 
-root.rec.FunctionName 				=  NO_EXISTS
-root.rec.ReqID 						=  systemID
-root.rec.Ostatus				    =  responseCode
-root.rec.RespMsg                    =  messageStatus
-root.rec.externalTransactionId      =  transactionReferenceNumber
-root.rec.ErrorCode					=  NO_EXISTS
-root.rec.ErrorDesc 					=  NO_EXISTS
-NO_EXISTS 					        =  responseDescription
-NO_EXISTS                           =  callbackUrl
-NO_EXISTS                           =  screeningRequestDate
-NO_EXISTS							=  messageChecksum
-NO_EXISTS							=  statusOwner
-NO_EXISTS                           =  statusComment
-NO_EXISTS                           =  statusLabel
-
-
-----------------
-{
-    "callbackUrl": " https://gateway-stg.51242.app.standardchartered.com/functions/api/v1/txnscreeningstatus/60dad0eb59664095b7c52126%22",
-    "messageChecksum": "",
-    "messageStatus": "001",
-    "responseCode": "200",
-    "responseDescription": "Ack Sent Successfully",
-    "screeningRequestDate": "04-Mar-26 05:39:34 AM",
-    "statusComment": "Stop: 1, Nonblocking: 0",
-    "statusLabel": "HIT",
-    "statusOwner": null,
-    "systemID": "SBCI20260304053934-00000-1151356",
-    "transactionReferenceNumber": "TS_REF_39"
-}
+ NET:06561001:NM COM [open] RQ from FRG
+   NET:06561109:ELG: event detail [Switch state now [INACTIVE] ]
+   NET:06561110:syslog: LOG_WARNING [Switch state now [INACTIVE] ]
+   NET:06561110:Switch state now [INACTIVE] 
+   NET:06562401:Message store is 0 percent used
+   NET:06562401:SAF (ISS): no txns extracted from SAF
+   NET:06562600:NM RQ[sign on] from FG
+   NET:06562600:NETWORK [ABC] START PROCESS ACQ TXN
+   NET:06562600:***********************************
+   NET:06562600:Try to locate txn in Store
+   NET:06562600:Looking up txn using SPA key
+   NET:06562600:No match in disk log
+   NET:06562600:Slot [1] allocated in store
+   NET:06562600:GEN: ST  [newstore](0) EV  [nman](3) PR [net man rq](14) [RQ]
+   NET:06562600:ACQ: msg class [   ]
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:30 38 30 30                                      :004:: 0800
+   NET:BUILD BM - UUUUUUBUUUBUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUbUUUUUUUUUUUUUUUUUUUUUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUb
+   NET:----- Field 7 -----
+   NET:F007 DATA PREP [0303065626]
+   NET:ADD LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA ADDED
+   NET:03 03 06 56 26                                   :005:: ___V&
+   NET:----- Field 11 -----
+   NET:F011 DATA PREP [673613]
+   NET:ADD LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA ADDED
+   NET:67 36 13                                         :003:: g6_
+   NET:----- Field 13 -----
+   NET:F013 DATA PREP [0303]
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:03 03                                            :002:: __
+   NET:----- Field 48 -----
+   NET:F048 DATA PREP (MIXED):
+   NET:ISO: Completed part [1] of message
+   NET:----- Field 70 -----
+   NET:F070 DATA PREP [001]
+   NET:ADD LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA ADDED
+   NET:00 01                                            :002:: __
+   NET:----- Field 128 -----
+   NET:F128 DATA PREP [NNNNNNNN]
+   NET:ADD LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA ADDED
+   NET:4E 4E 4E 4E 4E 4E 4E 4E                          :008:: NNNNNNNN
+   NET:ISO: Completed part [2] of message
+   NET:06562600:ISO: Built primary bitmap with err [0]
+   NET:06562600:ISO: Built secondary bitmap with err [0]
+   NET:06562600:NKY: Net key (from STAN) [0673613030306562600000000000]
+   NET:06562600:syslog: LOG_WARNING [Switch state now [W_SON] ]
+   NET:06562600:Switch state now [W_SON] 
+   NET:06562600:NETWORK [ABC] END PROCESS ACQ TXN
+   NET:06562600:*********************************
+   NET:06562638:NET RCV
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:30 38 31 30                                      :004:: 0810
+   NET:DATA GOT [0810]
+   NET:Msg type 810
+   NET:06562638:ISO: RCV BM 
+   NET:82 28 00 00 02 00 00 00                          :008:: _(______
+   NET:06562638:ISO: RCV BM 
+   NET:04 00 00 00 00 00 00 01                          :008:: ________
+   NET:ISO: Skipping F001 - it's a bitmap
+   NET:----- Field 7 -----
+   NET:GET LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA RCVED
+   NET:03 03 06 56 26                                   :005:: ___V&
+   NET:F007 DATA GOT [0303065626]
+   NET:----- Field 11 -----
+   NET:GET LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA RCVED
+   NET:67 36 13                                         :003:: g6_
+   NET:F011 DATA GOT [673613]
+   NET:----- Field 13 -----
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:03 03                                            :002:: __
+   NET:F013 DATA GOT [0303]
+   NET:----- Field 39 -----
+   NET:GET LEN: len fmt [0] len len [0] len [2] err [0]
+   NET:DATA RCVED
+   NET:F0 F0                                            :002:: __
+   NET:F039 DATA GOT [00]
+   NET:ISO: Skipping F065 - it's a bitmap
+   NET:----- Field 70 -----
+   NET:GET LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA RCVED
+   NET:00 01                                            :002:: __
+   NET:F070 DATA GOT [001]
+   NET:----- Field 128 -----
+   NET:GET LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA RCVED
+   NET:4E 4E 4E 4E 4E 4E 4E 4E                          :008:: NNNNNNNN
+   NET:F128 DATA GOT [NNNNNNNN]
+   NET:06562638:NKY: Net key (from STAN) [0673613030306562600000000000]
+   NET:06562638:TC [3] NET MSGT [810] SPA MSGT [999]
+   NET:06562638:NET: net_process_mac, ACQ, RSP, KEK USER [ABC]
+   NET:06562638:NET: MAC Process: Return [0]
+   NET:06562638:NETWORK [ABC] START PROCESS ACQ TXN
+   NET:06562638:***********************************
+   NET:06562638:Try to locate txn in Store
+   NET:06562638:Request located in STORE slot [1]
+   NET:06562638:GEN: ST  [wfrsp](2) EV  [nman](3) PR [net man rsp](15) [RSP]
+   NET:F001 expctd [U] rcvd [P] sdst [S]
+   NET:F007 expctd [M] rcvd [P] sdst [S]
+   NET:COMP Src [0303065626] Dst [0303065626]
+   NET:F011 expctd [M] rcvd [P] sdst [L]
+   NET:COMP Src [673613] Dst [673613]
+   NET:F013 expctd [M] rcvd [P] sdst [S]
+   NET:COMP Src [0303] Dst [0303]
+   NET:F039 expctd [R] rcvd [P] sdst [S]
+   NET:F070 expctd [M] rcvd [P] sdst [H]
+   NET:COMP Src [1] Dst [1]
+   NET:F128 expctd [O] rcvd [P] sdst [S]
+   NET:COPY Src [NNNNNNNN] Dst []
+   NET:06562638:ACQ: Authorised response to sign on received.
+   NET:06562638:ACQ: Now waiting for key exchange
+   NET:06562638:syslog: LOG_WARNING [Switch state now [KYS_OUT] ]
+   NET:06562638:Switch state now [KYS_OUT] 
+   NET:06562638:NETWORK [ABC] END PROCESS ACQ TXN
+   NET:06562638:*********************************
+   NET:06563903:NET RCV
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:30 38 30 30                                      :004:: 0800
+   NET:DATA GOT [0800]
+   NET:Msg type 800
+   NET:06563903:ISO: RCV BM 
+   NET:82 28 00 00 00 01 00 00                          :008:: _(______
+   NET:06563903:ISO: RCV BM 
+   NET:04 00 00 00 00 00 00 01                          :008:: ________
+   NET:ISO: Skipping F001 - it's a bitmap
+   NET:----- Field 7 -----
+   NET:GET LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA RCVED
+   NET:03 03 06 56 26                                   :005:: ___V&
+   NET:F007 DATA GOT [0303065626]
+   NET:----- Field 11 -----
+   NET:GET LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA RCVED
+   NET:77 30 54                                         :003:: w0T
+   NET:F011 DATA GOT [773054]
+   NET:----- Field 13 -----
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:03 03                                            :002:: __
+   NET:F013 DATA GOT [0303]
+   NET:----- Field 48 -----
+   NET:GET LEN: len fmt [5] len len [2] len [44] err [0]
+   NET:DATA RCVED
+   NET:00 44 2A 2A 2A 2A 2A 2A  2A 2A 2A 2A 2A 2A 2A 2A :010:: _D**************
+   NET:2A 2A 2A 2A 2A 2A 2A 2A  2A 2A 2A 2A 2A 2A 2A 2A :020:: ****************
+   NET:2A 2A 2A 2A 2A 2A 2A 2A  2A 2A 2A 2A 2A 2A       :02E:: **************
+   NET:F048 DATA GOT (MIXED):
+   NET:2A 2A 2A 2A 2A 2A 2A 2A  2A 2A 2A 2A 2A 2A 2A 2A :010:: ****************
+   NET:2A 2A 2A 2A 2A 2A 2A 2A  2A 2A 2A 2A 2A 2A 2A 2A :020:: ****************
+   NET:2A 2A 2A 2A 2A 2A 2A 2A  2A 2A 2A 2A             :02C:: ************
+   NET:ISO: Skipping F065 - it's a bitmap
+   NET:----- Field 70 -----
+   NET:GET LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA RCVED
+   NET:08 11                                            :002:: __
+   NET:F070 DATA GOT [811]
+   NET:----- Field 128 -----
+   NET:GET LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA RCVED
+   NET:4E 4E 4E 4E 4E 4E 4E 4E                          :008:: NNNNNNNN
+   NET:F128 DATA GOT [NNNNNNNN]
+   NET:06563903:NKY: Net key (from STAN) [0773054030306562600000000000]
+   NET:06563904:TC [3] NET MSGT [800] SPA MSGT [999]
+   NET:06563904:NET: net_process_mac, ISS, RQ, KEK USER [ABC]
+   NET:06563904:NET: MAC Process: Return [0]
+   NET:06563904:NETWORK [ABC] START PROCESS ISS TXN
+   NET:06563904:***********************************
+   NET:06563904:New calendar day [030326] detected. Performing new day processing.
+   NET:06563904:Try to locate txn in Store
+   NET:06563904:Looking up txn using NET key
+   NET:06563904:No match in disk log
+   NET:06563904:Slot [1] allocated in store
+   NET:06563904:GEN: ST  [newstore](0) EV  [nman](3) PR [net man rq](14) [RQ]
+   NET:06563905:Key acceptance received. KEK user [ABC]
+   NET:06563905:ENC: Sending REQ - My PID [662221] Msg Seqno [35472] Rsp MSQID [301993078]
+   NET:06563907:ENC: Received RS - RQ PID [662221] Msg Seqno [35472] Rsp MSQID [301993078]
+   NET:06563907:ABC WK New keycheck
+   NET:39 44 37 30 42 30 30 30  30 30 30 30 30 30 30 30 :010:: 9D70B00000000000
+   NET:06563907:ENC: Sending REQ - My PID [662221] Msg Seqno [35473] Rsp MSQID [301993078]
+   NET:06563909:ENC: Received RS - RQ PID [662221] Msg Seqno [35473] Rsp MSQID [301993078]
+   NET:06563909:ABC WK New keycheck
+   NET:31 39 43 45 32 43 30 30  30 30 30 30 30 30 30 30 :010:: 19CE2C0000000000
+   NET:06563909:ISS: Key update processed OK
+   NET:06563909:ELG: event detail [Switch state now [ACTIVE] ]
+   NET:06563909:syslog: LOG_WARNING [Switch state now [ACTIVE] ]
+   NET:06563909:Switch state now [ACTIVE] 
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:30 38 31 30                                      :004:: 0810
+   NET:BUILD BM - BUUUUUCUUUCUCUUUUUUUUUUUUUUUUUUTUUUUUUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUb
+   NET:----- Field 7 -----
+   NET:F007 DATA PREP [0303065626]
+   NET:ADD LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA ADDED
+   NET:03 03 06 56 26                                   :005:: ___V&
+   NET:----- Field 11 -----
+   NET:F011 DATA PREP [773054]
+   NET:ADD LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA ADDED
+   NET:77 30 54                                         :003:: w0T
+   NET:----- Field 13 -----
+   NET:F013 DATA PREP [0303]
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:03 03                                            :002:: __
+   NET:----- Field 32 -----
+   NET:F032 DATA PREP []
+   NET:----- Field 39 -----
+   NET:F039 DATA PREP [00]
+   NET:ADD LEN: len fmt [0] len len [0] len [2] err [0]
+   NET:DATA ADDED
+   NET:F0 F0                                            :002:: __
+   NET:ISO: Completed part [1] of message
+   NET:----- Field 70 -----
+   NET:F070 DATA PREP [811]
+   NET:ADD LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA ADDED
+   NET:08 11                                            :002:: __
+   NET:----- Field 128 -----
+   NET:F128 DATA PREP [NNNNNNNN]
+   NET:ADD LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA ADDED
+   NET:4E 4E 4E 4E 4E 4E 4E 4E                          :008:: NNNNNNNN
+   NET:ISO: Completed part [2] of message
+   NET:06563909:ISO: Built primary bitmap with err [0]
+   NET:06563909:ISO: Built secondary bitmap with err [0]
+   NET:06563909:NKY: Net key (from STAN) [0773054030306562600000000000]
+   NET:06563909:NETWORK [ABC] END PROCESS ISS TXN
+   NET:06563909:***********************************
+   NET:06563909:Message store is 0 percent used
+   NET:06563910:SAF (ACQ): no txns extracted from SAF
+   NET:06574001:NM RQ[echo_test] from FG
+   NET:06574001:NETWORK [ABC] START PROCESS ACQ TXN
+   NET:06574001:***********************************
+   NET:06574001:Try to locate txn in Store
+   NET:06574001:Looking up txn using SPA key
+   NET:06574001:No match in disk log
+   NET:06574001:Slot [1] allocated in store
+   NET:06574001:GEN: ST  [newstore](0) EV  [nman](3) PR [net man rq](14) [RQ]
+   NET:06574001:ACQ: msg class [   ]
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:30 38 30 30                                      :004:: 0800
+   NET:BUILD BM - UUUUUUBUUUBUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUbUUUUUUUUUUUUUUUUUUUUUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUb
+   NET:----- Field 7 -----
+   NET:F007 DATA PREP [0303065740]
+   NET:ADD LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA ADDED
+   NET:03 03 06 57 40                                   :005:: ___W@
+   NET:----- Field 11 -----
+   NET:F011 DATA PREP [673614]
+   NET:ADD LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA ADDED
+   NET:67 36 14                                         :003:: g6_
+   NET:----- Field 13 -----
+   NET:F013 DATA PREP [0303]
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:03 03                                            :002:: __
+   NET:----- Field 48 -----
+   NET:F048 DATA PREP (MIXED):
+   NET:ISO: Completed part [1] of message
+   NET:----- Field 70 -----
+   NET:F070 DATA PREP [301]
+   NET:ADD LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA ADDED
+   NET:03 01                                            :002:: __
+   NET:----- Field 128 -----
+   NET:F128 DATA PREP [NNNNNNNN]
+   NET:ADD LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA ADDED
+   NET:4E 4E 4E 4E 4E 4E 4E 4E                          :008:: NNNNNNNN
+   NET:ISO: Completed part [2] of message
+   NET:06574001:ISO: Built primary bitmap with err [0]
+   NET:06574001:ISO: Built secondary bitmap with err [0]
+   NET:06574001:NKY: Net key (from STAN) [0673614030306574000000000000]
+   NET:06574001:MAC: Generating MAC
+   NET:06574001:ENC: Sending REQ - My PID [662221] Msg Seqno [35474] Rsp MSQID [301993078]
+   NET:06574001:OUTBOUND message will be sent once MAC is generated
+   NET:06574001:NETWORK [ABC] END PROCESS ACQ TXN
+   NET:06574001:*********************************
+   NET:06574005:ENC: Prefetch RS - RQ PID [662221] Msg Seqno [35474] Rsp MSQID [301993078]
+   NET:06574005:MAC: Retrieving completed MAC from ENC
+   NET:06574005:Extracted OUTBOUND message from MAC Cache for sending
+   NET:06574039:NET RCV
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:30 38 31 30                                      :004:: 0810
+   NET:DATA GOT [0810]
+   NET:Msg type 810
+   NET:06574039:ISO: RCV BM 
+   NET:82 28 00 00 02 00 00 00                          :008:: _(______
+   NET:06574039:ISO: RCV BM 
+   NET:04 00 00 00 00 00 00 01                          :008:: ________
+   NET:ISO: Skipping F001 - it's a bitmap
+   NET:----- Field 7 -----
+   NET:GET LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA RCVED
+   NET:03 03 06 57 40                                   :005:: ___W@
+   NET:F007 DATA GOT [0303065740]
+   NET:----- Field 11 -----
+   NET:GET LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA RCVED
+   NET:67 36 14                                         :003:: g6_
+   NET:F011 DATA GOT [673614]
+   NET:----- Field 13 -----
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:03 03                                            :002:: __
+   NET:F013 DATA GOT [0303]
+   NET:----- Field 39 -----
+   NET:GET LEN: len fmt [0] len len [0] len [2] err [0]
+   NET:DATA RCVED
+   NET:F0 F0                                            :002:: __
+   NET:F039 DATA GOT [00]
+   NET:ISO: Skipping F065 - it's a bitmap
+   NET:----- Field 70 -----
+   NET:GET LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA RCVED
+   NET:03 01                                            :002:: __
+   NET:F070 DATA GOT [301]
+   NET:----- Field 128 -----
+   NET:GET LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA RCVED
+   NET:37 32 30 31 36 32 38 42                          :008:: 7201628B
+   NET:F128 DATA GOT [7201628B]
+   NET:06574039:NKY: Net key (from STAN) [0673614030306574000000000000]
+   NET:06574039:TC [3] NET MSGT [810] SPA MSGT [999]
+   NET:06574039:NET: net_process_mac, ACQ, RSP, KEK USER [ABC]
+   NET:06574039:NET: Calculate MAC field [ACQ] [RSP] - INCOMING
+   NET:06574039:NET: Validating MAC
+   NET:06574039:ENC: Sending REQ - My PID [662221] Msg Seqno [35475] Rsp MSQID [301993078]
+   NET:06574041:ENC: Received RS - RQ PID [662221] Msg Seqno [35475] Rsp MSQID [301993078]
+   NET:06574041:NET: ENC ERR: MAC is bad 
+   NET:06574041:NET: MAC Verify FAIL: DATA[7201628B] MAC[7201628B]
+   NET:06574041:NET: MAC Process: Return [25]
+   NET:06582500:Message store is 0 percent used
+   NET:06582500:SAF (ISS): no txns extracted from SAF
+   NET:06582600:Timeout at SLOT [1] - time in [1772510260] now [1772510306] tout [45]
+   NET:06582600:GEN: ST  [tout](3) EV  [nman](3) PR [net man rq timeout](13) [RQ]
+   NET:06582600:======== SDS DUMP FROM p_net_man_tout =========================
+   NET:CONTROL: state [3] tc [3] [RQ] bday [8558] nday [829] cache slot [1]
+   NET:LOHDR  : id [9999] seq [1773] imd [777777] date [260303] time [065740]
+   NET:BASEDATA: amt [0000000] device [
+   NET:NETDATA: xmit_date_time [0303065740] RRN [] 
+   NET:NETKEY : [0673614030306574000000000000] 
+   NET:06584000:Message store is 0 percent used
+   NET:06584000:SAF (ACQ): no txns extracted from SAF
+   NET:06584100:NM RQ[echo_test] from FG
+   NET:06584100:NETWORK [ABC] START PROCESS ACQ TXN
+   NET:06584100:***********************************
+   NET:06584100:Try to locate txn in Store
+   NET:06584100:Looking up txn using SPA key
+   NET:06584100:No match in disk log
+   NET:06584100:Slot [1] allocated in store
+   NET:06584100:GEN: ST  [newstore](0) EV  [nman](3) PR [net man rq](14) [RQ]
+   NET:06584100:ACQ: msg class [   ]
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:30 38 30 30                                      :004:: 0800
+   NET:BUILD BM - UUUUUUBUUUBUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUbUUUUUUUUUUUUUUUUUUUUUCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUb
+   NET:----- Field 7 -----
+   NET:F007 DATA PREP [0303065841]
+   NET:ADD LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA ADDED
+   NET:03 03 06 58 41                                   :005:: ___XA
+   NET:----- Field 11 -----
+   NET:F011 DATA PREP [673615]
+   NET:ADD LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA ADDED
+   NET:67 36 15                                         :003:: g6_
+   NET:----- Field 13 -----
+   NET:F013 DATA PREP [0303]
+   NET:ADD LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA ADDED
+   NET:03 03                                            :002:: __
+   NET:----- Field 48 -----
+   NET:F048 DATA PREP (MIXED):
+   NET:ISO: Completed part [1] of message
+   NET:----- Field 70 -----
+   NET:F070 DATA PREP [301]
+   NET:ADD LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA ADDED
+   NET:03 01                                            :002:: __
+   NET:----- Field 128 -----
+   NET:F128 DATA PREP [NNNNNNNN]
+   NET:ADD LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA ADDED
+   NET:4E 4E 4E 4E 4E 4E 4E 4E                          :008:: NNNNNNNN
+   NET:ISO: Completed part [2] of message
+   NET:06584100:ISO: Built primary bitmap with err [0]
+   NET:06584100:ISO: Built secondary bitmap with err [0]
+   NET:06584100:NKY: Net key (from STAN) [0673615030306584100000000000]
+   NET:06584100:MAC: Generating MAC
+   NET:06584100:ENC: Sending REQ - My PID [662221] Msg Seqno [35476] Rsp MSQID [301993078]
+   NET:06584100:OUTBOUND message will be sent once MAC is generated
+   NET:06584100:NETWORK [ABC] END PROCESS ACQ TXN
+   NET:06584100:*********************************
+   NET:06584104:ENC: Prefetch RS - RQ PID [662221] Msg Seqno [35476] Rsp MSQID [301993078]
+   NET:06584104:MAC: Retrieving completed MAC from ENC
+   NET:06584104:Extracted OUTBOUND message from MAC Cache for sending
+   NET:06584138:NET RCV
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:30 38 31 30                                      :004:: 0810
+   NET:DATA GOT [0810]
+   NET:Msg type 810
+   NET:06584138:ISO: RCV BM 
+   NET:82 28 00 00 02 00 00 00                          :008:: _(______
+   NET:06584138:ISO: RCV BM 
+   NET:04 00 00 00 00 00 00 01                          :008:: ________
+   NET:ISO: Skipping F001 - it's a bitmap
+   NET:----- Field 7 -----
+   NET:GET LEN: len fmt [0] len len [0] len [10] err [0]
+   NET:DATA RCVED
+   NET:03 03 06 58 41                                   :005:: ___XA
+   NET:F007 DATA GOT [0303065841]
+   NET:----- Field 11 -----
+   NET:GET LEN: len fmt [0] len len [0] len [6] err [0]
+   NET:DATA RCVED
+   NET:67 36 15                                         :003:: g6_
+   NET:F011 DATA GOT [673615]
+   NET:----- Field 13 -----
+   NET:GET LEN: len fmt [0] len len [0] len [4] err [0]
+   NET:DATA RCVED
+   NET:03 03                                            :002:: __
+   NET:F013 DATA GOT [0303]
+   NET:----- Field 39 -----
+   NET:GET LEN: len fmt [0] len len [0] len [2] err [0]
+   NET:DATA RCVED
+   NET:F0 F0                                            :002:: __
+   NET:F039 DATA GOT [00]
+   NET:ISO: Skipping F065 - it's a bitmap
+   NET:----- Field 70 -----
+   NET:GET LEN: len fmt [0] len len [0] len [3] err [0]
+   NET:DATA RCVED
+   NET:03 01                                            :002:: __
+   NET:F070 DATA GOT [301]
+   NET:----- Field 128 -----
+   NET:GET LEN: len fmt [0] len len [0] len [8] err [0]
+   NET:DATA RCVED
+   NET:34 46 43 46 41 39 45 45                          :008:: 4FCFA9EE
+   NET:F128 DATA GOT [4FCFA9EE]
+   NET:06584138:NKY: Net key (from STAN) [0673615030306584100000000000]
+   NET:06584138:TC [3] NET MSGT [810] SPA MSGT [999]
+   NET:06584138:NET: net_process_mac, ACQ, RSP, KEK USER [ABC]
+   NET:06584138:NET: Calculate MAC field [ACQ] [RSP] - INCOMING
+   NET:06584138:NET: Validating MAC
+   NET:06584138:ENC: Sending REQ - My PID [662221] Msg Seqno [35477] Rsp MSQID [301993078]
+   NET:06584141:ENC: Received RS - RQ PID [662221] Msg Seqno [35477] Rsp MSQID [301993078]
+   NET:06584141:NET: ENC ERR: MAC is bad 
+   NET:06584141:NET: MAC Verify FAIL: DATA[4FCFA9EE] MAC[4FCFA9EE]
+   NET:06584141:NET: MAC Process: Return [25]
+   NET:06592700:Timeout at SLOT [1] - time in [1772510321] now [1772510367] tout [45]
+   NET:06592700:GEN: ST  [tout](3) EV  [nman](3) PR [net man rq timeout](13) [RQ]
+   NET:06592700:======== SDS DUMP FROM p_net_man_tout =========================
+   NET:CONTROL: state [3] tc [3] [RQ] bday [8558] nday [829] cache slot [1]
+   NET:LOHDR  : id [9999] seq [1773] imd [777777] date [260303] time [065841]
+   NET:BASEDATA: amt [0000000] device [
+   NET:NETDATA: xmit_date_time [0303065841] RRN [] 
+   NET:NETKEY : [0673615030306584100000000000] 
+   NET:06594200:NM RQ[echo_test] from FG
+   NET:06594200:NETWORK [ABC] START PROCESS ACQ TXN
+   NET:06594200:***********************************
 */
